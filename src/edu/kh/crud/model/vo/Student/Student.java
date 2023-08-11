@@ -2,83 +2,73 @@ package edu.kh.crud.model.vo.Student;
 
 public class Student {
 
-	private String studentId; 
-	private String studentPw;
-	private String studentName;
-	private String studentGrade;
-	private String studentHome;
-	private String studentEnroll;
-	private String studentPhone;
+	private String Name;
+	private int Age;
+	private char Gender;
+	private String Home;
+	private String Enroll;
+	private String Phone;
 	private String parentsPhone;
 	
 	public Student() {}
 	
-	public Student(String studentId, String studentPw, String studentName, String studentGrade,
-					String studentHome, String studentEnroll, String studentPhone, String parentsPhone) {
-		this.studentId = studentId;
-		this.studentPw = studentPw;
-		this.studentName = studentName;
-		this.studentGrade = studentGrade;
-		this.studentHome = studentHome;
-		this.studentEnroll = studentEnroll;
-		this.studentPhone = studentPhone;
+	public Student(String Name, int Age, char Gender,
+					String Home, String Enroll, String Phone, String parentsPhone) {
+		this.Name = Name;
+		this.Age = Age;
+		this.Gender = Gender;
+		this.Home = Home;
+		this.Enroll = Enroll;
+		this.Phone = Phone;
 		this.parentsPhone = parentsPhone;
 	}
 
-	public String getStudentId() {
-		return studentId;
+	public String getName() {
+		return Name;
 	}
 
-	public void setStudentId(String studentId) {
-		this.studentId = studentId;
+	public void setName(String name) {
+		Name = name;
 	}
 
-	public String getStudentPw() {
-		return studentPw;
+	public int getAge() {
+		return Age;
 	}
 
-	public void setStudentPw(String studentPw) {
-		this.studentPw = studentPw;
+	public void setAge(int age) {
+		Age = age;
 	}
 
-	public String getStudentName() {
-		return studentName;
+	public char getGender() {
+		return Gender;
 	}
 
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
+	public void setGender(char gender) {
+		Gender = gender;
 	}
 
-	public String getStudentGrade() {
-		return studentGrade;
+	public String getHome() {
+		return Home;
 	}
 
-	public void setStudentGrade(String studentGrade) {
-		this.studentGrade = studentGrade;
+	public void setHome(String home) {
+		Home = home;
 	}
 
-	public String getStudentHome() {
-		return studentHome;
+	public String getEnroll() {
+		return Enroll;
 	}
 
-	public void setStudentHome(String studentHome) {
-		this.studentHome = studentHome;
+	public void setEnroll(String enroll) {
+		Enroll = enroll;
 	}
 
-	public String getStudentEnroll() {
-		return studentEnroll;
+	public String getPhone() {
+		return Phone;
 	}
 
-	public void setStudentEnroll(String studentEnroll) {
-		this.studentEnroll = studentEnroll;
-	}
-
-	public String getStudentPhone() {
-		return studentPhone;
-	}
-
-	public void setStudentPhone(String studentPhone) {
-		this.studentPhone = studentPhone;
+	public void setPhone(String phone) {
+		Phone = phone;
 	}
 
 	public String getParentsPhone() {
@@ -89,6 +79,13 @@ public class Student {
 		this.parentsPhone = parentsPhone;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [Name=" + Name + ", Age=" + Age + ", Gender=" + Gender + ", Home="
+				+ Home + ", Enroll=" + Enroll + ", Phone=" + Phone + ", parentsPhone=" + parentsPhone + "]";
+	}
+
+	
 	
 	
 }
