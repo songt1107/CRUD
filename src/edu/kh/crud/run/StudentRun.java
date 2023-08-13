@@ -8,5 +8,5 @@ public class StudentRun {
 		StudentService ss = new StudentService();
 		ss.displayMenu();
 	}
-	
+	 
 }
